@@ -21,7 +21,7 @@ namespace FinalProject
         {
             ArticleType type = articleType;
             Article newArticle;
-            newArticle = Article.CreateArticle(articleType, description);
+            newArticle = Article.CreateArticle(articleName, articleType, description);
             newArticle.Description = description;
             articlesDictionary.Add(articleName, newArticle);
         }

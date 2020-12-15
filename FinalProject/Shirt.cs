@@ -12,16 +12,13 @@ namespace FinalProject
         {
 
         }
-        public Shirt(string Name, string Type, string Description)
+        public Shirt(string Name, string Description)
         {
             this.Name = Name;
-            this.Type = Type;
-            this.Description = " ";
+            this.Description = Description;
         }
 
-        public string Name { get; set; }
-
-        public string Type { get; set; }
+        public override string Name { get; set; }
 
         public override string Description { get; set; }
     }

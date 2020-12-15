@@ -8,7 +8,7 @@ namespace FinalProject
 {
     public abstract class Article
     {
-        public static Article CreateArticle(ArticleType type, string description)
+        public static Article CreateArticle(string articleName, ArticleType type, string description)
         {
             Article article = null;
             switch (type)
@@ -23,9 +23,13 @@ namespace FinalProject
                     article = new Footwear();
                     break;
             }
+            article.Name = articleName;
             article.Description = description;
             return article;
         }
+
+        public virtual string Name { get; set; }
+
         public virtual string Description { get; set; }
 
         public virtual string GetDescription()
