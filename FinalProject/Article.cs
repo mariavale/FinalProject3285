@@ -33,10 +33,5 @@ namespace FinalProject
         public ArticleType Type { get; set; }
 
         public virtual string Description { get; set; }
-
-        public virtual string GetDescription()
-        {
-            return this.Description;
-        }
     }
 }
