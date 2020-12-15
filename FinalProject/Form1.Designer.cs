@@ -48,6 +48,7 @@
             this.tempComboBox = new System.Windows.Forms.ComboBox();
             this.DescriptionListBox = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.TypeListBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -180,7 +181,7 @@
             this.ClosetListBox.FormattingEnabled = true;
             this.ClosetListBox.Location = new System.Drawing.Point(33, 208);
             this.ClosetListBox.Name = "ClosetListBox";
-            this.ClosetListBox.Size = new System.Drawing.Size(112, 199);
+            this.ClosetListBox.Size = new System.Drawing.Size(97, 199);
             this.ClosetListBox.TabIndex = 17;
             // 
             // warmCheckBox
@@ -218,9 +219,9 @@
             // DescriptionListBox
             // 
             this.DescriptionListBox.FormattingEnabled = true;
-            this.DescriptionListBox.Location = new System.Drawing.Point(151, 208);
+            this.DescriptionListBox.Location = new System.Drawing.Point(208, 208);
             this.DescriptionListBox.Name = "DescriptionListBox";
-            this.DescriptionListBox.Size = new System.Drawing.Size(97, 199);
+            this.DescriptionListBox.Size = new System.Drawing.Size(64, 199);
             this.DescriptionListBox.TabIndex = 21;
             // 
             // label3
@@ -233,11 +234,20 @@
             this.label3.Text = "Please only select one";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // TypeListBox
+            // 
+            this.TypeListBox.FormattingEnabled = true;
+            this.TypeListBox.Location = new System.Drawing.Point(137, 208);
+            this.TypeListBox.Name = "TypeListBox";
+            this.TypeListBox.Size = new System.Drawing.Size(65, 199);
+            this.TypeListBox.TabIndex = 23;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(589, 450);
+            this.Controls.Add(this.TypeListBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.DescriptionListBox);
             this.Controls.Add(this.tempComboBox);
@@ -287,6 +297,7 @@
         private System.Windows.Forms.ComboBox tempComboBox;
         private System.Windows.Forms.ListBox DescriptionListBox;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ListBox TypeListBox;
     }
 }
 

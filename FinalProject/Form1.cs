@@ -13,7 +13,7 @@ namespace FinalProject
 {
     public partial class Form1 : Form
     {
-        IArticleServices aService = new ArticleService();
+        IArticleServices aService = new ArticleServices();
 
         List<string> shirts = new List<string>();
         List<string> pants = new List<string>();
@@ -45,6 +45,7 @@ namespace FinalProject
             } 
             aService.CreateArticle(articleName, type, description);
             DescriptionListBox.Items.Add(description);
+            TypeListBox.Items.Add(type);
 
 
             switch (type)

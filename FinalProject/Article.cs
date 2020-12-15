@@ -30,6 +30,8 @@ namespace FinalProject
 
         public virtual string Name { get; set; }
 
+        public ArticleType Type { get; set; }
+
         public virtual string Description { get; set; }
 
         public virtual string GetDescription()

@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
-    class ArticleService : IArticleServices
+    class ArticleServices : IArticleServices
     {
         private Dictionary<string, Article> articlesDictionary;
 
-        public ArticleService()
+        public ArticleServices()
         {
             //instantiate the dictionary for articles
             articlesDictionary = new Dictionary<string, Article>();

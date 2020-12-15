@@ -48,7 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Article.cs" />
-    <Compile Include="ArticleService.cs" />
+    <Compile Include="ArticleServices.cs" />
     <Compile Include="ArticleServicesTests.cs" />
     <Compile Include="ArticleType.cs" />
     <Compile Include="Footwear.cs" />
